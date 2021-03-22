@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MovieDetailHeaderView" customModule="TheMovieDBAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="313"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="439-XG-IbL">
+                    <rect key="frame" x="16" y="0.0" width="342" height="313"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEd-01-nGO">
+                    <rect key="frame" x="358" y="0.0" width="56" height="313"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="jMH-Ac-QNq"/>
+                    </constraints>
+                    <state key="normal" image="ic-loadmore"/>
+                </button>
+            </subviews>
+            <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="439-XG-IbL" secondAttribute="bottom" id="5ZE-bK-IBq"/>
+                <constraint firstItem="439-XG-IbL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cl0-bM-xr1"/>
+                <constraint firstAttribute="bottom" secondItem="xEd-01-nGO" secondAttribute="bottom" id="fXr-uL-tWe"/>
+                <constraint firstAttribute="trailing" secondItem="xEd-01-nGO" secondAttribute="trailing" id="hRH-uE-WsU"/>
+                <constraint firstItem="xEd-01-nGO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iWR-7J-nei"/>
+                <constraint firstItem="xEd-01-nGO" firstAttribute="leading" secondItem="439-XG-IbL" secondAttribute="trailing" id="tZr-6U-Wm7"/>
+                <constraint firstItem="439-XG-IbL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="xs7-VX-M6L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowButton" destination="xEd-01-nGO" id="I6k-I0-lCd"/>
+                <outlet property="titleLabel" destination="439-XG-IbL" id="Ebk-gE-ijj"/>
+            </connections>
+            <point key="canvasLocation" x="-225" y="2"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-loadmore" width="22" height="22"/>
+    </resources>
+</document>
